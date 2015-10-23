@@ -12,6 +12,7 @@ FROM hypriot/rpi-python
 
 RUN apt-get update
 
+# Add automatically unzips/untars file to this dir
 ADD ./pifm.tar.gz /root/
 
 WORKDIR /root/
